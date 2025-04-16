@@ -6,3 +6,5 @@ ENV DB_USER=root
 ENV DB_PASSWD=admin
 
 EXPOSE 80
+ENTRYPOINT ["/bin/bash", "-c"]
+CMD ["apache2-foreground"]
